@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AppsViewController" customModule="OverKill" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="jZA-JQ-NhO" customClass="ITSwitch">
+                    <rect key="frame" x="20" y="94" width="100" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="fhk-bF-7Yj"/>
+                        <constraint firstAttribute="height" constant="54" id="otc-wP-Ufb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="itunesActive:" target="-2" id="sWq-JT-IWp"/>
+                    </connections>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="ls2-dy-TPR" customClass="ITSwitch">
+                    <rect key="frame" x="20" y="20" width="100" height="54"/>
+                    <connections>
+                        <action selector="photosActivce:" target="-2" id="1LU-1L-Mv9"/>
+                    </connections>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL0-r9-2rs">
+                    <rect key="frame" x="128" y="113" width="44" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="iTunes" id="pg0-OP-Xuf">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecX-hx-QSK">
+                    <rect key="frame" x="126" y="39" width="47" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Photes" id="hwc-bn-ztG">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ecX-hx-QSK" firstAttribute="leading" secondItem="ls2-dy-TPR" secondAttribute="trailing" constant="8" id="1qt-wW-5VW"/>
+                <constraint firstItem="ls2-dy-TPR" firstAttribute="width" secondItem="jZA-JQ-NhO" secondAttribute="width" id="AlM-rQ-Fbg"/>
+                <constraint firstItem="jZA-JQ-NhO" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="Bc7-dJ-FL1"/>
+                <constraint firstItem="jZA-JQ-NhO" firstAttribute="centerY" secondItem="xL0-r9-2rs" secondAttribute="centerY" id="CmC-Jr-Kco"/>
+                <constraint firstItem="ls2-dy-TPR" firstAttribute="top" secondItem="jZA-JQ-NhO" secondAttribute="bottom" constant="20" id="DH4-FO-GIV"/>
+                <constraint firstAttribute="bottom" secondItem="ls2-dy-TPR" secondAttribute="bottom" constant="20" symbolic="YES" id="V75-5Q-zq8"/>
+                <constraint firstItem="ls2-dy-TPR" firstAttribute="centerY" secondItem="ecX-hx-QSK" secondAttribute="centerY" id="lVh-y0-ild"/>
+                <constraint firstItem="jZA-JQ-NhO" firstAttribute="leading" secondItem="ls2-dy-TPR" secondAttribute="leading" id="lnR-vc-u7q"/>
+                <constraint firstItem="ls2-dy-TPR" firstAttribute="height" secondItem="jZA-JQ-NhO" secondAttribute="height" id="oSG-e5-SdF"/>
+                <constraint firstItem="xL0-r9-2rs" firstAttribute="centerX" secondItem="ecX-hx-QSK" secondAttribute="centerX" id="tTm-1B-sUY"/>
+            </constraints>
+            <point key="canvasLocation" x="37" y="75"/>
+        </customView>
+    </objects>
+</document>
